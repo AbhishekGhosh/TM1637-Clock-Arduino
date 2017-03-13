@@ -1,5 +1,4 @@
 // set current time by editing the values at line 16 and 17
-// this is 24 hour clock
 const int clock = 7;
 const int data = 8;
 uint8_t digits[] = { 0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f };
@@ -14,7 +13,7 @@ void setup()
   write(0x00, 0x00, 0x00, 0x00);
 }
 byte tcnt2;
-  unsigned long setMinutes = 59;
+  unsigned long setMinutes = 34;
   unsigned long setHours = 23;
   unsigned long time = (setMinutes * 60 * 1000) + (setHours * 3600 *1000);
 void setupInterrupt()
